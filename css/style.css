@@ -320,3 +320,41 @@ body {
 .home-bar:hover {
   opacity: 1;
 }
+
+/* === RESPONSIVO APENAS PARA WEBVIEW MOBILE === */
+body.webview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: transparent !important; /* fundo transparente */
+    overflow: hidden;
+    padding: 0;
+}
+
+/* Centraliza e escala o iPhone para caber no WebViewer */
+body.webview .iphone {
+    transform: scale(0.65); /* ajuste fino da proporção */
+    transform-origin: top center; /* centraliza horizontalmente */
+}
+
+/* Garante que todos os elementos internos fiquem proporcionais */
+body.webview .notch-image img,
+body.webview .big-clock,
+body.webview .charge-status,
+body.webview .swipe-text,
+body.webview .pin-display,
+body.webview .pin-pad .key,
+body.webview .bottom-icons img,
+body.webview .dock,
+body.webview .home-bar,
+body.webview .app-icon,
+body.webview .app-name,
+body.webview .pin-notification,
+body.webview .apps,
+body.webview .status-bar,
+body.webview .control-center {
+    transform: scale(1);
+}
+
