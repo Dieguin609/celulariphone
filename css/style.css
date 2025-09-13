@@ -320,3 +320,95 @@ body {
 .home-bar:hover {
   opacity: 1;
 }
+
+/* === Responsivo apenas para mobile/WebView específico === */
+@media only screen and (max-width: 480px), 
+       (max-height: 800px) { /* limites aproximados do celular */
+    
+    body, html {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center; /* centraliza horizontal */
+        align-items: center;     /* centraliza vertical */
+        padding: 0;
+        background: transparent !important; /* fundo invisível */
+        overflow: hidden;
+    }
+
+    .iphone {
+        width: 200px;   /* largura do seu WebView */
+        height: 315px;  /* altura do seu WebView */
+        border-radius: 10px; /* mantém arredondamento proporcional */
+        box-shadow: 0 0 15px rgba(0,0,0,0.6);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .notch-image img {
+        width: 80%;  /* proporcional à nova largura */
+        height: auto;
+    }
+
+    .big-clock {
+        font-size: 20px;  /* ajusta proporcional à tela pequena */
+        top: 15%;
+    }
+
+    .charge-status, .swipe-text {
+        font-size: 12px;
+        top: 25%;
+    }
+
+    .pin-display {
+        width: 80px;
+        height: 25px;
+        font-size: 14px;
+        letter-spacing: 8px;
+        top: 30%;
+    }
+
+    .pin-pad .key {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+
+    .bottom-icons img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .dock {
+        width: 90%;
+        height: 30px;
+        bottom: 5%;
+    }
+
+    .home-bar {
+        width: 60px;
+        height: 3px;
+        bottom: 2%;
+    }
+
+    /* Qualquer outro elemento absoluto precisa ser proporcional */
+    .apps {
+        gap: 5px;
+        padding: 0 5px;
+    }
+
+    .app-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .app-name {
+        font-size: 6px;
+        width: 25px;
+    }
+
+    .pin-notification {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+}
