@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-screen">
+  <div class="iphone">
+    <div class="status-bar">
+      <button class="back-btn" onclick="voltarHome()">←</button>
+      <span>Spotify</span>
+    </div>
+    <div class="spotify">
+      <p>🎶 Tocando música de teste 🎶</p>
+      <audio id="player" controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+  <script src="js/spotify.js"></script>
+</body>
+</html>

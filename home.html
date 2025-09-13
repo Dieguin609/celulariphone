@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Sim</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-screen">
+  <div class="iphone">
+
+    <!-- Barra de status -->
+    <div class="status-bar" id="statusBar">
+      <span id="hora"></span>
+      <div class="status-icons">
+        <img src="img/sinal.png" alt="Sinal" class="status-icon">
+        <img src="img/wifi.png" alt="Wi-Fi" class="status-icon">
+        <img src="img/bateria.png" alt="Bateria" class="status-icon">
+      </div>
+    </div>
+
+    <!-- Central de controle -->
+    <div id="controlCenter" class="control-center">
+      <div class="control-grid">
+        <button class="control-btn" id="wifiBtn">📶 Wi-Fi</button>
+        <button class="control-btn" id="darkModeBtn">🌙 Noturno</button>
+        <button class="control-btn" id="volumeBtn">🔊 Volume</button>
+        <button class="control-btn" id="brightnessBtn">☀️ Brilho</button>
+        <button class="control-btn" id="settingsBtn">⚙️ Configurações</button>
+      </div>
+    </div>
+  <!-- RELÓGIO -->
+    <div class="big-clock">
+      <span id="hours">09</span>:<span id="minutes">41</span>
+    </div>
+    <!-- Grade de apps -->
+    <div class="apps">
+      <div class="app">
+        <img src="img/spotify.png" alt="Spotify" class="app-icon">
+        <p class="app-name">Spotify</p>
+      </div>
+      <div class="app">
+        <img src="img/mercado-livre.png" alt="Mercado Livre" class="app-icon">
+        <p class="app-name">Mercado</p>
+      </div>
+      <div class="app">
+        <img src="img/instagram.jpg" alt="Instagram" class="app-icon">
+        <p class="app-name">Instagram</p>
+      </div>
+      <div class="app">
+        <img src="img/whatsapp.png" alt="WhatsApp" class="app-icon">
+        <p class="app-name">WhatsApp</p>
+      </div>
+      <div class="app">
+        <img src="img/ifood.png" alt="iFood" class="app-icon">
+        <p class="app-name">iFood</p>
+      </div>
+      <div class="app">
+        <img src="img/uber.png" alt="Uber" class="app-icon">
+        <p class="app-name">Uber</p>
+      </div>
+      <div class="app">
+        <img src="img/telefone.jpg" alt="Telefone" class="app-icon">
+        <p class="app-name">Telefone</p>
+      </div>
+      <div class="app">
+        <img src="img/calculadora.png" alt="Calculadora" class="app-icon">
+        <p class="app-name">Calc</p>
+      </div>
+      <div class="app">
+        <img src="img/appstore.png" alt="App Store" class="app-icon">
+        <p class="app-name">App Store</p>
+      </div>
+      <div class="app">
+        <img src="img/caixa.png" alt="Caixa" class="app-icon">
+        <p class="app-name">Caixa</p>
+      </div>
+      <div class="app">
+        <img src="img/nubank.png" alt="Nubank" class="app-icon">
+        <p class="app-name">Nubank</p>
+      </div>
+    </div>
+
+    <!-- Dock inferior -->
+    <div class="dock">
+      <img src="img/telefone.jpg" alt="Telefone" class="app-icon">
+      <img src="img/whatsapp.png" alt="WhatsApp" class="app-icon">
+      <img src="img/safari.png" alt="Safari" class="app-icon">
+      <img src="img/mensagens.png" alt="Mensagens" class="app-icon">
+    </div>
+
+    <!-- Barrinha de navegação inferior -->
+    <div class="home-bar" id="homeBar"></div>
+
+  </div>
+  <script src="js/home.js"></script>
+</body>
+</html>

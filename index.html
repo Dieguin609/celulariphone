@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>iPhone 16 - Tela de Bloqueio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/lock.js"></script>
+</head>
+<body>
+  <!-- Container do iPhone -->
+  <div class="iphone lock-screen" style="background-image:url('img/wallpaper1.jpg');">
+
+    <!-- IMAGEM DO NOTCH (AGORA UMA IMAGEM FIXA) -->
+    <div class="notch-image">
+      <img src="img/notch16.png" alt="Notch iPhone 16" style="width:200px; height:auto;">
+    </div>
+
+    <!-- BARRA DE STATUS -->
+    <div class="status-bar">
+      <span class="carrier">VIVO📶</span>
+      <span class="wifi"></span>
+      <span class="battery">🔋100%</span>
+    </div>
+
+    <!-- RELÓGIO -->
+    <div class="big-clock">
+      <span id="hours">09</span>:<span id="minutes">41</span>
+    </div>
+
+    <!-- STATUS DE CARGA -->
+    <div class="charge-status">100% carregado</div>
+
+    <!-- TEXTO DESLIZE PARA ABRIR -->
+    <div class="swipe-text" id="swipe-text">⬆️ Deslize para abrir</div>
+
+    <!-- CAMPO DE SENHA (ESCONDIDO ATÉ DESLIZAR) -->
+    <div class="pin-section" id="pin-section" style="display:none;">
+      <div class="pin-display" id="pin-display">•••</div>
+
+      <!-- TECLADO NUMÉRICO -->
+      <div class="pin-pad">
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">←</div>
+        <div class="key">0</div>
+        <div class="key">✓</div>
+      </div>
+    </div>
+
+    <!-- ÍCONES INFERIORES REDUZIDOS -->
+    <div class="bottom-icons">
+      <img src="img/flashlight.png" alt="Lanterna" class="icon-small" style="width:40px; height:40px;">
+      <img src="img/camera.png" alt="Câmera" class="icon-small" style="width:40px; height:40px;">
+    </div>
+
+    <!-- BARRA HOME -->
+    <div class="home-indicator"></div>
+  </div>
+</body>
+</html>
