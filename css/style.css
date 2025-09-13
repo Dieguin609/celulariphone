@@ -320,41 +320,133 @@ body {
 .home-bar:hover {
   opacity: 1;
 }
+/* ===========================
+   RESPONSIVE CELULAR
+=========================== */
 
-/* === RESPONSIVO APENAS PARA WEBVIEW MOBILE === */
-body.webview {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background: transparent !important; /* fundo transparente */
-    overflow: hidden;
-    padding: 0;
+/* === Breakpoint para tablets e celulares grandes === */
+@media(max-width:768px){
+  
+  /* Corpo */
+  body {
+    justify-content: center; /* centraliza o celular */
+    padding-right: 0;
+    background: #888;
+  }
+
+  /* iPhone container */
+  .iphone {
+    width: 90vw;   /* largura responsiva */
+    height: calc(90vw * 650 / 300); /* mantém proporção original */
+    border-width: 4px;
+    border-radius: 10vw;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  }
+
+  /* Notch */
+  .notch-image {
+    top: -7vw;
+  }
+  .notch-image img {
+    width: 60%;
+  }
+
+  /* Barra de status */
+  .status-bar {
+    font-size: 3vw;
+    padding: 0 4vw;
+    top: 2vw;
+  }
+
+  /* Relógio */
+  .big-clock {
+    font-size: 15vw;
+    top: 14vw;
+  }
+
+  /* Status de carga */
+  .charge-status {
+    font-size: 4vw;
+    top: 25vw;
+  }
+
+  /* Texto deslize para abrir */
+  .swipe-text {
+    font-size: 4vw;
+    top: 31vw;
+  }
+
+  /* PIN display */
+  .pin-display {
+    top: 36vw;
+    width: 35vw;
+    height: 10vw;
+    font-size: 5vw;
+    letter-spacing: 3vw;
+    border-radius: 2vw;
+  }
+
+  /* Teclado PIN */
+  .pin-pad {
+    bottom: 18vw;
+    gap: 3vw;
+    padding: 0 6vw;
+  }
+  .pin-pad .key {
+    width: 12vw;
+    height: 12vw;
+    font-size: 5vw;
+  }
+
+  /* Ícones inferiores */
+  .bottom-icons {
+    bottom: 6vw;
+    padding: 0 12vw;
+  }
+  .bottom-icons img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  /* Barra home */
+  .home-indicator {
+    width: 28vw;
+    height: 1.5vw;
+    bottom: 3vw;
+  }
+
+  /* Apps */
+  .apps {
+    top: 20vw;
+    gap: 2vw;
+    padding: 0 4vw;
+  }
+  .app-icon {
+    width: 12vw;
+    height: 12vw;
+  }
+  .app-name {
+    font-size: 2.5vw;
+    width: 14vw;
+  }
+
+  /* Dock */
+  .dock {
+    bottom: 4vw;
+    width: 80%;
+    height: 15vw;
+    border-radius: 5vw;
+  }
+  .dock .app-icon {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  /* Home bar */
+  .home-bar {
+    width: 28vw;
+    height: 1.5vw;
+    bottom: 1.5vw;
+  }
+
 }
-
-/* Centraliza e escala o iPhone para caber no WebViewer */
-body.webview .iphone {
-    transform: scale(0.65); /* ajuste fino da proporção */
-    transform-origin: top center; /* centraliza horizontalmente */
-}
-
-/* Garante que todos os elementos internos fiquem proporcionais */
-body.webview .notch-image img,
-body.webview .big-clock,
-body.webview .charge-status,
-body.webview .swipe-text,
-body.webview .pin-display,
-body.webview .pin-pad .key,
-body.webview .bottom-icons img,
-body.webview .dock,
-body.webview .home-bar,
-body.webview .app-icon,
-body.webview .app-name,
-body.webview .pin-notification,
-body.webview .apps,
-body.webview .status-bar,
-body.webview .control-center {
-    transform: scale(1);
-}
-
