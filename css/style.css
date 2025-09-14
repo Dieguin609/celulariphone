@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #888;
+  background-color: transparent !important;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -652,13 +652,13 @@ body {
 /* ===========================
    RESPONSIVO MOBILE
 =========================== */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1030px) {
   body {
     padding: 10px; /* Menos espaço nas laterais */
   }
   .iphone {
-    width: 245px;
-    height: 550px;
+    width: 265px;
+    height: 400px;
   }
 
   .notch-image {
