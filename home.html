@@ -9,14 +9,16 @@
 <body class="home-screen">
   <div class="iphone">
 
+    <!-- Notch -->
+    <div class="notch-image">
+      <img src="img/notch16.png" alt="Notch iPhone 16" style="width:200px; height:auto;">
+    </div>
+
     <!-- Barra de status -->
-    <div class="status-bar" id="statusBar">
-      <span id="hora"></span>
-      <div class="status-icons">
-        <img src="img/sinal.png" alt="Sinal" class="status-icon">
-        <img src="img/wifi.png" alt="Wi-Fi" class="status-icon">
-        <img src="img/bateria.png" alt="Bateria" class="status-icon">
-      </div>
+    <div class="status-bar">
+      <span class="carrier">VIVO📶</span>
+      <span class="wifi"></span>
+      <span class="battery">🔋100%</span>
     </div>
 
     <!-- Central de controle -->
@@ -27,12 +29,32 @@
         <button class="control-btn" id="volumeBtn">🔊 Volume</button>
         <button class="control-btn" id="brightnessBtn">☀️ Brilho</button>
         <button class="control-btn" id="settingsBtn">⚙️ Configurações</button>
+      </div> 
+    </div>
+
+    <!-- Widgets -->
+    <div class="widgets">
+      <!-- Widget de Notícias -->
+      <div class="widget widget-news">
+        <h4 class="widget-title">Breck News</h4>
+        <p class="widget-text">
+          O prefeito decretou luto de 7 dias.
+        </p>
+      </div>
+
+      <!-- Widget de Previsão do Tempo -->
+      <div class="widget widget-weather">
+        <div class="weather-header">
+          <span class="city">Skay City</span>
+          <span class="temp">58°</span>
+        </div>
+        <div class="weather-details">
+          <span class="status">Mostly Clouds</span>
+          <span class="range">H 68° / L 58°</span>
+        </div>
       </div>
     </div>
-  <!-- RELÓGIO -->
-    <div class="big-clock">
-      <span id="hours">09</span>:<span id="minutes">41</span>
-    </div>
+    
     <!-- Grade de apps -->
     <div class="apps">
       <div class="app">
@@ -60,24 +82,12 @@
         <p class="app-name">Uber</p>
       </div>
       <div class="app">
-        <img src="img/telefone.jpg" alt="Telefone" class="app-icon">
-        <p class="app-name">Telefone</p>
+        <img src="img/nubank.png" alt="Nubank" class="app-icon">
+        <p class="app-name">Nubank</p>
       </div>
       <div class="app">
         <img src="img/calculadora.png" alt="Calculadora" class="app-icon">
-        <p class="app-name">Calc</p>
-      </div>
-      <div class="app">
-        <img src="img/appstore.png" alt="App Store" class="app-icon">
-        <p class="app-name">App Store</p>
-      </div>
-      <div class="app">
-        <img src="img/caixa.png" alt="Caixa" class="app-icon">
-        <p class="app-name">Caixa</p>
-      </div>
-      <div class="app">
-        <img src="img/nubank.png" alt="Nubank" class="app-icon">
-        <p class="app-name">Nubank</p>
+        <p class="app-name">Calculos</p>
       </div>
     </div>
 
@@ -89,8 +99,6 @@
       <img src="img/mensagens.png" alt="Mensagens" class="app-icon">
     </div>
 
-    <body class="webview home-screen"> <!-- Tela principal -->
-
     <!-- Barrinha de navegação inferior -->
     <div class="home-bar" id="homeBar"></div>
 
@@ -98,4 +106,3 @@
   <script src="js/home.js"></script>
 </body>
 </html>
-
