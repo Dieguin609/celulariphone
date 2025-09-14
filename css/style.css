@@ -335,7 +335,7 @@ body {
 }
 
 body {
-  background: #888;
+  background: transparent !important; /* remove qualquer cor de fundo */
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -657,8 +657,8 @@ body {
     padding: 10px; /* Menos espaço nas laterais */
   }
   .iphone {
-    width: 265px;
-    height: 400px;
+    width: 235px;
+    height: 415px;
   }
 
   .notch-image {
