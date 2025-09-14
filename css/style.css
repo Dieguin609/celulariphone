@@ -16,6 +16,13 @@ body {
   padding-right: 20px; /* Afasta o celular da borda direita */
 }
 
+.iphone.lock-screen {
+  background-image: url('../img/wallpaper1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
 /* === iPhone container === */
 .iphone {
   width: 300px;
@@ -643,132 +650,60 @@ body {
   opacity: 1;
 }
 /* ===========================
-   RESPONSIVE CELULAR
+   RESPONSIVO MOBILE
 =========================== */
-
-/* === Breakpoint para tablets e celulares grandes === */
-@media(max-width:768px){
-  
-  /* Corpo */
+@media screen and (max-width: 1000px) {
   body {
-    justify-content: center; /* centraliza o celular */
-    padding-right: 0;
-    background: #888;
+    padding: 10px; /* Menos espaço nas laterais */
   }
-
-  /* iPhone container */
   .iphone {
-    width: 90vw;   /* largura responsiva */
-    height: calc(90vw * 650 / 300); /* mantém proporção original */
-    border-width: 4px;
-    border-radius: 10vw;
-    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    width: 205px;
+    height: 350px;
   }
 
-  /* Notch */
   .notch-image {
-    top: -7vw;
+    top: -30px; /* aumenta o valor para descer o notch */
   }
   .notch-image img {
-    width: 60%;
+    width: 150px !important;
   }
 
-  /* Barra de status */
-  .status-bar {
-    font-size: 3vw;
-    padding: 0 4vw;
-    top: 2vw;
-  }
-
-  /* Relógio */
   .big-clock {
-    font-size: 15vw;
-    top: 14vw;
+    top: 40px; /* aumenta o valor para descer o notch */
+  }
+  .big-clock {
+    font-size: 42px;
   }
 
-  /* Status de carga */
   .charge-status {
-    font-size: 4vw;
-    top: 25vw;
+    top: 100px; /* aumenta o valor para descer o notch */
+  }
+  .charge-status {
+    font-size: 12px;
   }
 
-  /* Texto deslize para abrir */
-  .swipe-text {
-    font-size: 4vw;
-    top: 31vw;
-  }
-
-  /* PIN display */
   .pin-display {
-    top: 36vw;
-    width: 35vw;
-    height: 10vw;
-    font-size: 5vw;
-    letter-spacing: 3vw;
-    border-radius: 2vw;
+    display: none; /* Esconde o campo do PIN */
   }
 
-  /* Teclado PIN */
-  .pin-pad {
-    bottom: 18vw;
-    gap: 3vw;
-    padding: 0 6vw;
-  }
+
+  
   .pin-pad .key {
-    width: 12vw;
-    height: 12vw;
-    font-size: 5vw;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
   }
 
-  /* Ícones inferiores */
-  .bottom-icons {
-    bottom: 6vw;
-    padding: 0 12vw;
-  }
   .bottom-icons img {
-    width: 10vw;
-    height: 10vw;
+    display: none; /* Esconde os ícones inferiores */
   }
 
-  /* Barra home */
+  .swipe-text {
+    top: 280px; /* aumenta o valor para descer o notch */
+  }
+
   .home-indicator {
-    width: 28vw;
-    height: 1.5vw;
-    bottom: 3vw;
+    width: 80px;
+    height: 5px;
   }
-
-  /* Apps */
-  .apps {
-    top: 20vw;
-    gap: 2vw;
-    padding: 0 4vw;
-  }
-  .app-icon {
-    width: 12vw;
-    height: 12vw;
-  }
-  .app-name {
-    font-size: 2.5vw;
-    width: 14vw;
-  }
-
-  /* Dock */
-  .dock {
-    bottom: 4vw;
-    width: 80%;
-    height: 15vw;
-    border-radius: 5vw;
-  }
-  .dock .app-icon {
-    width: 12vw;
-    height: 12vw;
-  }
-
-  /* Home bar */
-  .home-bar {
-    width: 28vw;
-    height: 1.5vw;
-    bottom: 1.5vw;
-  }
-
 }
