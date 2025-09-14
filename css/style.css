@@ -709,9 +709,7 @@ body {
 }
 .apps {
   position: relative;       
-  width: 100%;              /* ocupa toda a largura da tela */
   justify-content: center; /* centraliza os apps */
-  display: grid;            /* organiza em grade */
   gap: 12px;                /* controla o espaço entre os apps */
   margin-top: -30px;         /* espaço pequeno depois dos widgets */
 }
